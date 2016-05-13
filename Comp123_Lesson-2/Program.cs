@@ -13,11 +13,13 @@ namespace Comp123_Lesson_2
  * 
  * @Constructor Main
  * 
- * version 0.3
+ * version 0.5
+ * added unit test
+ * 0.6 refactored
  
          */
 
-    class Program
+  public  class Program
     {
         /** 
          Main Method for class Program
@@ -43,11 +45,36 @@ namespace Comp123_Lesson_2
         {
             Console.Write("Please enter user Name :");
             string usrname = "";
-           usrname= Console.ReadLine();
-            Console.WriteLine("_________");
-            Console.WriteLine("you entered:" + usrname);
+           
+            OutputstringToConsole("Enter user Name: ",false);
+            usrname = Console.ReadLine();
+            Console.WriteLine("\n==========");
+            Console.WriteLine("you entered:" + usrname + "\n");
             return usrname;
 
+
+        }
+        /*
+         * This method writes a string to the console.Parameters allow user to
+         * choose to add new method
+         * @
+         */
+
+
+        public static string OutputstringToConsole (string outputString, bool hasNewLine)
+        {
+            //if (hasNewLine)
+            //{
+            //    Console.WriteLine(outputString);
+            //}
+            //else
+            //{
+            //    Console.Write(outputString);
+            //}
+            string suffixstring = hasNewLine ? "\n" : "";
+            Console.WriteLine(outputString+suffixstring);
+
+            return outputString;
         }
     }
 }
