@@ -6,8 +6,27 @@ using System.Threading.Tasks;
 
 namespace Comp123_Lesson_2
 {
+/**
+ * This is the Driver program 
+ * 
+ * @Class Program
+ * 
+ * @Constructor Main
+ * 
+ * version 0.3
+ 
+         */
+
     class Program
     {
+        /** 
+         Main Method for class Program
+        @param string args
+            @constructor Main
+         
+             
+            **/
+
         static void Main(string[] args)
         {
             GetUsrName();
